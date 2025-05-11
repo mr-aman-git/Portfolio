@@ -2,8 +2,7 @@ import React from "react";
 import HoverCard from "../cards/HoverCard";
 import AmanImage from "../assets/aman-image.png";
 import { motion } from "framer-motion";
-import { GithubIcon, LinkedinIcon } from '@heroicons/react/24/solid';
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 const HomePage = () => {
   return (
     <>
@@ -18,13 +17,15 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-200">
                 Hi, I'm{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
                   Aman Sharma
                 </span>
               </h1>
-              <h2 className="text-2xl pt-1.5">Frontend Developer</h2>
+              <h2 className="text-2xl pt-1.5 text-gray-200">
+                Frontend Developer
+              </h2>
               <p className="pt-4 text-[18px] text-gray-200 text-justify md:w-[580px]">
                 A passionate software developer with a strong foundation in
                 designing and developing dynamic web applications. Skilled in
@@ -42,8 +43,23 @@ const HomePage = () => {
                   View Project
                 </button>
               </div>
-              <div className="flex gap-4">
-                
+              <div className="flex gap-4 pt-10">
+                <a
+                  href="https://github.com/mr-aman-git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-blue-400 transition-colors"
+                >
+                  <FaGithub className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aman-sharma-07684730a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-blue-400 transition-colors"
+                >
+                  <FaLinkedin className="w-6 h-6" />
+                </a>
               </div>
             </motion.div>
           </HoverCard>

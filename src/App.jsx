@@ -12,7 +12,7 @@ const App = () => {
         <Header />
 
         <main>
-          <section id="home">
+          <section id="/">
             <HomePage />
           </section>
 

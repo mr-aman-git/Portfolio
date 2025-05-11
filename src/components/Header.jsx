@@ -15,17 +15,17 @@ const Header = () => {
   return (
     <div>
       <nav className="h-20 bg-[#101828] flex justify-between items-center px-6 md:px-20 shadow-sm shadow-blue-900">
-        <NavLink to="/" className={navLinkClass}>
+        <a href="/" className={navLinkClass}>
           <h1 className="md:text-3xl text-2xl text-gray-200 font-semibold">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">
               Aman
             </span>
             Sharma
           </h1>
-        </NavLink>
+        </a>
 
         <div className="hidden md:flex gap-8 text-lg">
-          <a href="#home" className={navLinkClass}>
+          <a href="/" className={navLinkClass}>
             Home
           </a>
           <a href="#about" className={navLinkClass}>
