@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navLinkClass = ({ isActive }) =>
-  `relative inline-block px-2 py-1 transition-colors duration-300 ${
-    isActive ? "text-blue-400" : "text-gray-200"
-  }
-  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
-  after:bg-blue-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300
-  hover:after:scale-x-100`;
+const navLinkClass = `relative inline-block px-2 py-1 text-gray-200 transition-colors duration-300
+                      hover:text-blue-400
+                      after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
+                      after:bg-blue-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300
+                      hover:after:scale-x-100`;
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +14,7 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
     <div>
-      <nav className="h-20 bg-[#101828] flex justify-between items-center px-6 md:px-20">
+      <nav className="h-20 bg-[#101828] flex justify-between items-center px-6 md:px-20 shadow-sm shadow-blue-900">
         <NavLink to="/" className={navLinkClass}>
           <h1 className="md:text-3xl text-2xl text-gray-200 font-semibold">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">
@@ -27,24 +25,24 @@ const Header = () => {
         </NavLink>
 
         <div className="hidden md:flex gap-8 text-lg">
-          <NavLink to="/" className={navLinkClass}>
+          <a href="#home" className={navLinkClass}>
             Home
-          </NavLink>
-          <NavLink to="/about" className={navLinkClass}>
+          </a>
+          <a href="#about" className={navLinkClass}>
             About
-          </NavLink>
-          <NavLink to="/experience" className={navLinkClass}>
+          </a>
+          <a href="#experience" className={navLinkClass}>
             Experience
-          </NavLink>
-          <NavLink to="/projects" className={navLinkClass}>
+          </a>
+          <a href="#projects" className={navLinkClass}>
             Projects
-          </NavLink>
-          <NavLink to="/education" className={navLinkClass}>
+          </a>
+          <a href="#education" className={navLinkClass}>
             Education
-          </NavLink>
-          <NavLink to="/contact" className={navLinkClass}>
+          </a>
+          <a href="#contact" className={navLinkClass}>
             Contact
-          </NavLink>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -61,40 +59,24 @@ const Header = () => {
         {/* Mobile Menu Dropdown */}
         {isOpen && (
           <div className="absolute top-20 right-0 w-full bg-[#101828] flex flex-col items-center gap-6 py-6 md:hidden z-50 shadow-lg">
-            <NavLink to="/" className={navLinkClass} onClick={toggleMenu}>
+            <a href="#home" className={navLinkClass} onClick={toggleMenu}>
               Home
-            </NavLink>
-            <NavLink to="/about" className={navLinkClass} onClick={toggleMenu}>
+            </a>
+            <a href="#about" className={navLinkClass} onClick={toggleMenu}>
               About
-            </NavLink>
-            <NavLink
-              to="/experience"
-              className={navLinkClass}
-              onClick={toggleMenu}
-            >
+            </a>
+            <a href="#experience" className={navLinkClass} onClick={toggleMenu}>
               Experience
-            </NavLink>
-            <NavLink
-              to="/projects"
-              className={navLinkClass}
-              onClick={toggleMenu}
-            >
+            </a>
+            <a href="#projects" className={navLinkClass} onClick={toggleMenu}>
               Projects
-            </NavLink>
-            <NavLink
-              to="/education"
-              className={navLinkClass}
-              onClick={toggleMenu}
-            >
+            </a>
+            <a href="#education" className={navLinkClass} onClick={toggleMenu}>
               Education
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className={navLinkClass}
-              onClick={toggleMenu}
-            >
+            </a>
+            <a href="#contact" className={navLinkClass} onClick={toggleMenu}>
               Contact
-            </NavLink>
+            </a>
           </div>
         )}
       </nav>
