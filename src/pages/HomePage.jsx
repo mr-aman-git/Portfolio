@@ -10,14 +10,14 @@ const HomePage = () => {
         <div className="flex px-6 md:px-20 justify-center flex-wrap md:flex-nowrap">
           <HoverCard
             hoverable={false}
-            className="py-8 bg-gradient-to-r from-blue/70 via-pink-500/5 to-transparent cursor-none"
+            className="py-8 bg-gradient-to-r from-blue/70 via-pink-500/5 to-transparent"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-200">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-200">
                 Hi, I'm{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
                   Aman Sharma
