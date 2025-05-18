@@ -62,7 +62,7 @@ function AboutPage() {
               </div>
             </Card>
 
-            <Card className=" pl-6 py-2 shadow shadow-[#303b4c] md:w-[560px]">
+            <Card className=" md:pl-6 pl-3 py-2 shadow shadow-[#303b4c] md:w-[560px]">
               <div className="text-gray-200">
                 <div className="flex items-center pt-3">
                   <div className="p-2 rounded-lg bg-gradient-to-r from-purple-500 to-pink-600 mr-3">
@@ -87,91 +87,91 @@ function AboutPage() {
                   </h2>
                 </div>
                 <div className="pt-8 pb-5 flex gap-3 flex-wrap">
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-600">
-                      <SiHtml5 title="HTML5" className="text-orange-600 text-[20px]" />
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-orange-400 to-orange-600">
+                      <SiHtml5 title="HTML5" className="text-white text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">HTML5</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-white to-gray-100">
-                      <SiCss3 title="CSS3" className="text-blue-500 text-[20px]" />
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600">
+                      <SiCss3 title="CSS3" className="text-white text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">CSS3</span>
                   </div>
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-white to-gray-200">
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-[#16becb] to-[#16becb]">
                       <SiTailwindcss
                         title="TailwindCSS"
-                        className="text-sky-500 text-[20px]"
+                        className="text-white text-[20px]"
                       />
                     </div>
                     <span className="text-gray-200 text-sm">TailwindCSS</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-purple-200 to-purple-400">
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-purple-400 to-purple-600">
                       <SiBootstrap
                         title="Bootstrap"
-                        className="text-purple-600 text-[20px]"
+                        className="text-white text-[20px]"
                       />
                     </div>
                     <span className="text-gray-200 text-sm">Bootstrap</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-white">
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-600">
                       <SiJavascript
                         title="JavaScript"
-                        className="text-yellow-500 text-[20px]"
+                        className="text-white text-[20px]"
                       />
                     </div>
                     <span className="text-gray-200 text-sm">JavaScript</span>
                   </div>
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600">
-                      <FaReact className="text-[20px] animate-spin-slow" />
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-[#66dbfb] to-[#66dbfb]">
+                      <FaReact className="text-[20px] animate-spin-slow text-white" />
                     </div>
                     <span className="text-gray-200 text-sm">React Js</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-black">
-                      <SiVuedotjs title="Vue.js" className="text-green-500 text-[20px]" />
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-green-400 to-green-600">
+                      <SiVuedotjs title="Vue.js" className="text-black text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">Vue.js</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-white">
-                      <SiNodedotjs title="Node.js" className="text-green-700 text-[20px]" />
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-green-700">
+                      <SiNodedotjs title="Node.js" className="text-white text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">Node.js</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-white">
-                      <SiMysql title="MySQL" className="text-blue-700 text-[20px]" />
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-blue-700">
+                      <SiMysql title="MySQL" className="text-white text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">MySQL</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
-                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-orange-400 to-orange-600">
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                    <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-[#8c2b98] to-[#5a2e83]">
                       <SiGit title="Git" className="text-white text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">Git</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
                     <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-blue-400 to-blue-600">
                       <SiC title="C Programming" className="text-white text-[20px]" />
                     </div>
                     <span className="text-gray-200 text-sm">C</span>
                   </div>
 
-                  <div className="flex items-center w-[160px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
+                  <div className="flex items-center md:w-[160px] w-[145px] pl-3 py-3 rounded-lg bg-gray-700 bg-opacity-50 hover:bg-opacity-70 transform hover:scale-105 transition-all duration-300 border-l-4 border-transparent hover:border-l-4 hover:border-purple-500 translate-y-0 opacity-100">
                     <div className="p-1.5 mr-3 rounded-lg bg-gradient-to-r from-orange-400 to-orange-600">
                       <SiGit title="Git" className="text-white text-[20px]" />
                     </div>
